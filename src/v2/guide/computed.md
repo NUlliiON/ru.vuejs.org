@@ -228,7 +228,7 @@ var watchExampleVM = new Vue({
     this.debouncedGetAnswer = _.debounce(this.getAnswer, 500)
   },
   methods: {
-    getAnswer: function () {
+    debouncedGetAnswer: function () {
       if (this.question.indexOf('?') === -1) {
         this.answer = 'Вопросы обычно заканчиваются вопросительным знаком. ;-)'
         return
